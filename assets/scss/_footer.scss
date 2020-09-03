@@ -1,0 +1,119 @@
+.footer {
+  background-image: url(../../assets/images/image.12.2.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .container{
+    padding: 50px 0;
+  .__menu_footer_top {
+    display: flex;
+    align-items: center;
+    .__menu_logo_footer {
+      li {
+        list-style: none;
+      }
+    }
+    .__list_menu_footer {
+      margin-left: 24px;
+      ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        li {
+          margin-right: 28px;
+          a {
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 140%;
+            letter-spacing: 0.05em;
+            color: #f5f5f5;
+            text-transform: uppercase;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+  .__menu_footer_center {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 64px;
+    margin-top: 44px;
+    .widget {
+      opacity: 0.55;
+      &:hover {
+        opacity: 1;
+      }
+      .widget_title {
+        font-size: 13px;
+        line-height: 140%;
+        letter-spacing: 0.05em;
+        color: #f5f5f5;
+        font-weight: 500;
+        padding-bottom: 16px;
+        border-bottom: 1px solid #303030;
+        text-transform: uppercase;
+      }
+      .menu {
+        padding-top: 16px;
+        list-style: none;
+        li {
+          margin-bottom: 10px;
+          a {
+            font-size: 14px;
+            line-height: 150%;
+            color: #d1d1d1;
+            text-decoration: none;
+            padding-bottom: 3px;
+            border-bottom: 1px dotted transparent;
+            font-weight: 400;
+            &:hover {
+              color: #ffe900;
+              border-bottom: 1px dotted #ffe900;
+              &::after {
+                content: url(../../assets/images/arrow.svg);
+                margin-left: 3px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .__menu_footer_bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .social-icon {
+      display: flex;
+      align-items: center;
+      a {
+        width: 32px;
+        height: 32px;
+        background: #ffffff;
+        border-radius: 50%;
+        color: #000000;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        margin-right: 16px;
+        transition: 0.3s;
+        &:hover {
+          background: #fde900;
+        }
+      }
+    }
+    .__copy_right {
+      font-size: 13px;
+      line-height: 140%;
+      text-align: right;
+      color: #8a8a8a;
+      span{
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+}
