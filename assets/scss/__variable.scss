@@ -20,6 +20,7 @@
             font-size: 16px;
             line-height: 150%;
             color: #a8a8a8;
+            text-decoration: none;
           }
         }
       }
@@ -32,6 +33,7 @@
     }
     .__meta {
       opacity: 0.4;
+      margin-top: 16px;
       span {
         font-size: 16px;
         line-height: 100%;
@@ -46,8 +48,8 @@
     margin-top: 48px;
     ._thumbnail_single {
       margin-bottom: 32px;
-      img{
-          width: 100%;
+      img {
+        width: 100%;
       }
     }
     .__content_single {
@@ -58,9 +60,75 @@
         line-height: 200%;
         color: #4e514e;
       }
-      img{
-          width: 100%;
-          height: auto;
+      h2 {
+        font-family: Scandia;
+        font-size: 20px;
+        line-height: 100%;
+        color: #4e514e;
+        margin-bottom: 16px;
+      }
+      .is-style-default {
+        margin: 48px 0;
+        figcaption {
+          font-family: Scandia;
+          margin-top: 16px;
+          font-size: 12px;
+          line-height: 100%;
+          color: #8b8b8b;
+          font-weight: 500;
+        }
+      }
+      ._list_post_random{
+        margin-top: 24px;
+        margin-bottom: 32px;
+        list-style-position: inside;
+        font-family: "Merriweather", serif;
+        li{
+          list-style: none;
+          position: relative;
+          margin-bottom: 24px;
+          &::after{
+            content: attr(data-src);
+            background: #FFE900;
+            width: 30px;
+            height: 30px;
+            color: #000000;
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 500;
+          }
+          &:last-child{
+            margin-bottom: 0;
+          }
+          a{
+            margin-left: 40px;
+            font-size: 16px;
+            line-height: 200%;
+            color: #4E514E;
+            text-decoration: none;
+          }
+        }
+      }
+      blockquote{
+        padding: 48px;
+        background: #FAFAF9;
+        margin: 32px 0 56px 0;
+        p{
+          font-weight: 300;
+          font-size: 20px;
+          line-height: 190%;
+          color: #4E504E;
+          font-style: normal !important;
+        }
+      }
+      img {
+        width: 100%;
+        height: auto;
       }
     }
   }

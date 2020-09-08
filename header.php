@@ -14,11 +14,7 @@
             <div class="__menu_wrap">
                 <div class="__menu_left">
                     <div class="__menu_logo">
-                        <?php 
-                            if ( function_exists( 'the_custom_logo' ) ) {
-                                the_custom_logo();
-                            }
-                        ?>
+                      <a href="<?php echo home_url()?>"><?php bloginfo();?></a>
                     </div>
                     <nav class="__list_menu_wrap">
                     <?php
@@ -31,7 +27,7 @@
                     </nav>
                 </div>
                 <div class="__menu_right">
-                    <input class="get_touch" type="button" value="Get in touch">  
+                    <input class="get_touch" type="button" value="Get in touch">
                 </div>
             </div>
         </div>
